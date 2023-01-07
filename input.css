@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active_link {
+  @apply border-default-color;
+}
+
+.h_16 {
+  @apply h-16;
+}
+
+.container {
+  @apply max-w-[70rem] m-auto px-6;
+}
+
+section {
+  @apply py-10 overflow-hidden;
+}
+
+img {
+  @apply max-w-[40rem];
+}
+
+/*------========------INDEX PAGE------========------  */
+.car_overlay:hover .round_btn {
+  @apply opacity-100;
+}
+
+.left_0 {
+  @apply left-0;
+}
+
+/* Swiper Slider */
+.swiper-pagination-bullet {
+  @apply h-4 w-4 rounded-full bg-slate-50;
+}
+.next,
+.prev {
+  @apply mx-1 h-20 w-20 leading-10 text-slate-50;
+}
+
+main:hover .next,
+main:hover .prev,
+main:hover .swiper-pagination {
+  @apply opacity-100;
+}
+@media (max-width: 640px) {
+  .next,
+  .prev {
+    @apply m-0 h-8 w-8;
+  }
+}
+/*------========------RATE PAGE------========------  */
+/* About */
+.polygon {
+  clip-path: polygon(50% 80%, 100% 65%, 100% 0, 0 0, 0 65%);
+}
+/*------========------ABOUT PAGE------========------  */
+.car_overlay:hover .round_btn {
+  @apply opacity-100;
+}
