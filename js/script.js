@@ -5,17 +5,19 @@ const navLi = document.querySelector(".nav_small li");
 
 const toggleNav = () => {
   smallNav.classList.toggle("left_0");
-  overlay.classList.toggle("bg-black/70 z-30");
+  overlay.classList.toggle("bg-black/70");
+  overlay.classList.toggle("z-30");
+  console.log(overlay);
 };
 
 navBtn.onclick = () => {
-  toggleNav;
+  toggleNav();
 };
 overlay.onclick = () => {
-  toggleNav;
+  toggleNav();
 };
 navLi.onclick = () => {
-  toggleNav;
+  toggleNav();
 };
 
 // Main Slider
