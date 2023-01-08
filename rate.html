@@ -63,7 +63,7 @@
           >
             <!-- Logo -->
             <div
-              class="hidden header-logo md:col-span-2 md:justify-self-end md:flex md:justify-center"
+              class="hidden header-logo md:col-span-2 md:justify-self-end md:flex md:justify-center mr-10"
             >
               <a href="#">
                 <img
@@ -75,7 +75,7 @@
             </div>
             <!-- Contact Info -->
             <div
-              class="contact-info w-full flex flex-col sm:flex-row md:flex-col md:gap-2 justify-center gap-2 md:justify-between items-center md:items-end md:col-span-1"
+              class="contact-info w-full flex flex-col sm:flex-row md:flex-col justify-center gap-2 sm:gap-6 md:justify-between items-center md:items-end md:col-span-1"
             >
               <div class="number flex items-center gap-4">
                 <span><img src="images/header/phone-icon.png" alt="" /></span>
@@ -185,7 +185,7 @@
         </div>
       </div>
 
-      <!-- Small Screen -->
+      <!-- Nav Small Screen -->
       <div class="md:hidden bg-default-black backdrop-blur-3xl">
         <div class="container">
           <div class="flex justify-between items-center py-3 sm:py-5">
@@ -210,7 +210,7 @@
                 <li><a href="index.html">home</a></li>
                 <li>
                   <a
-                    @click="navOpen = !navOpen"
+                    @click="navOpen = false"
                     href="about.html"
                     class="border-bottom flex justify-between items-center border-b border-stone-900/50"
                     ><span>about us</span
@@ -219,7 +219,7 @@
                 </li>
                 <li>
                   <a
-                    @click="navOpen = !navOpen"
+                    @click="navOpen = false"
                     href="#"
                     class="border-bottom flex justify-between items-center"
                     ><span>our fleet</span>
@@ -229,7 +229,7 @@
                 <li><a href="rate.html">service rate</a></li>
                 <li>
                   <a
-                    @click="navOpen = !navOpen"
+                    @click="navOpen = false"
                     href="#"
                     class="border-bottom flex justify-between items-center"
                     ><span>portfolio</span>
@@ -238,7 +238,7 @@
                 </li>
                 <li>
                   <a
-                    @click="navOpen = !navOpen"
+                    @click="navOpen = false"
                     href="#"
                     class="border-bottom flex justify-between items-center"
                     ><span>blog</span> <i class="fa-solid fa-arrow-right"></i
@@ -2141,7 +2141,7 @@
 
     <!-- overlay -->
     <div
-      @click="navOpen = !navOpen"
+      @click="navOpen = false"
       x-bind:class="navOpen ? 'bg-black/70 z-30' : '-z-10'"
       class="overlay absolute inset-0 transition-all duration-500"
     ></div>

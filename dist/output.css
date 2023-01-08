@@ -584,10 +584,6 @@ video {
   right: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .-left-full {
   left: -100%;
 }
@@ -598,6 +594,10 @@ video {
 
 .left-1\/2 {
   left: 50%;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .z-40 {
@@ -630,6 +630,10 @@ video {
 
 .col-end-3 {
   grid-column-end: 3;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .-mt-\[61px\] {
@@ -2154,6 +2158,10 @@ main:hover .swiper-pagination {
     flex-direction: row;
   }
 
+  .sm\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .sm\:gap-24 {
     gap: 6rem;
   }
@@ -2317,10 +2325,6 @@ main:hover .swiper-pagination {
 
   .md\:gap-32 {
     gap: 8rem;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
   }
 
   .md\:gap-6 {
