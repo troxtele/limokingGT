@@ -1,25 +1,4 @@
-const smallNav = document.querySelector(".nav_small");
-const overlay = document.querySelector(".overlay");
-const navBtn = document.querySelector(".nav_btn");
-const navLi = document.querySelector(".nav_small li");
-
-const toggleNav = () => {
-  smallNav.classList.toggle("left_0");
-  overlay.classList.toggle("bg-black/70");
-  overlay.classList.toggle("z-30");
-  console.log(overlay);
-};
-
-navBtn.onclick = () => {
-  toggleNav();
-};
-overlay.onclick = () => {
-  toggleNav();
-};
-navLi.onclick = () => {
-  toggleNav();
-};
-
+// <--------------------SLIDERS-------------------->
 // Main Slider
 let swiper = new Swiper(".main_slider", {
   speed: 1000,
@@ -91,6 +70,30 @@ let brandSlider = new Swiper(".brand_slider", {
     },
   },
 });
+
+// <---------------------------- Replaced with Alpine js ---------------------------- >
+
+// const smallNav = document.querySelector(".nav_small");
+// const overlay = document.querySelector(".overlay");
+// const navBtn = document.querySelector(".nav_btn");
+// const navLi = document.querySelector(".nav_small li");
+
+// const toggleNav = () => {
+//   smallNav.classList.toggle("left_0");
+//   overlay.classList.toggle("");
+//   overlay.classList.toggle("");
+//   console.log(overlay);
+// };
+
+// navBtn.onclick = () => {
+//   toggleNav();
+// };
+// overlay.onclick = () => {
+//   toggleNav();
+// };
+// navLi.onclick = () => {
+//   toggleNav();
+// };
 
 // Active nav link
 // const navLarge = [...document.querySelectorAll(".nav_large li a")];
