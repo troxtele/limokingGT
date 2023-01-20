@@ -93,7 +93,7 @@
       </div>
     </header>
     <!----------------------------------------->
-    <!----- Nav Section ----->
+    <!----- Nav Large Screen ----->
     <!----------------------------------------->
     <nav
       class="sticky top-0 md:bg-zinc-900/80 z-50 md:backdrop-blur-xl shadow-lg"
@@ -107,59 +107,240 @@
                 x-data="{active: 'home'}"
                 class="nav_links flex justify-center items-center lg:gap-5"
               >
-                <li class="flex justify-center items-center">
+                <li class="">
                   <a
                     x-on:click="active = 'home'"
                     x-bind:class="active === 'home' ? 'active_link': '' "
                     href="index.html"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
                     >home</a
                   >
                 </li>
-                <li class="flex justify-center items-center">
+                <!-- About Us -->
+                <li class="relative">
                   <a
                     x-on:click="active = 'about'"
                     x-bind:class="active === 'about' ? 'active_link': '' "
                     href="about.html"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
-                    >about us</a
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
+                    >pages</a
                   >
+                  <!-- Sub menu -->
+                  <ul
+                    class="submenu absolute top-full bg-zinc-800 z-50 capitalize opacity-0 invisible transition-all duration-500"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >About us 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >personal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20 uppercase"
+                        >faq</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >contact page</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >404 page</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-slate-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-transparent"
+                        >testimonial</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li class="flex justify-center items-center">
+                <!-- Our fleet -->
+                <li class="relative">
                   <a
                     x-on:click="active = 'ourFeet'"
                     x-bind:class="active === 'ourFeet' ? 'active_link': '' "
                     href="#"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
                     >our fleet</a
                   >
+                  <!-- Sub menu -->
+                  <ul
+                    class="submenu absolute top-full bg-zinc-800 z-50  capitalize opacity-0 invisible transition-all duration-500"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >Fleet 2 Columns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >Fleet 3 Columns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >Fleet 4 Columns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20"
+                        >Fleet Modern 2 Columns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-slate-400/20 uppercase"
+                        >Fleet Modern 3 Columns</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center pt-[1rem] pb-3 pl-4 w-[200px] text-zinc-300 transition-all duration-300 hover:text-zinc-100 leading-none hover:border-cyan-400/30 border-b border-transparent"
+                        >Fleet Modern 4 Columns</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li class="flex justify-center items-center">
+                <!-- Service rate -->
+                <li>
                   <a
                     x-on:click="active = 'serivce'"
                     x-bind:class="active === 'service' ? 'active_link': '' "
                     href="rate.html"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
                     >service rate</a
                   >
                 </li>
-                <li class="flex justify-center items-center">
+                <!-- Portfolio -->
+                <li class="relative">
                   <a
                     x-on:click="active = 'portfolio'"
                     x-bind:class="active === 'portfolio' ? 'active_link': '' "
                     href="#"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
                     >portfolio</a
                   >
+                  <!-- Sub menu -->
+                  <div class="submenu capitalize p-6 absolute top-full -right-[205%] lg:-right-[310%] bg-zinc-800 flex opacity-0 invisible transition-all duration-500">
+
+                    <!-- Lists -->
+                    <div class="lists_container flex">
+                      <!-- List 1 -->
+                        <div class="sub_list flex flex-col gap-4 pr-6">
+                        <a href="#" class="text-zinc-100 text-lg px-3">Portfolio Classic</a>
+                        <ul class=" w-72 lg:w-96 text-zinc-300">
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 1 Column (Both Sidebar)</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 2 Columns (Right Sidebar)</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 3 Columns</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 4 Columns</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 2 Columns, No Space</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 3 Columns, No Space</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 4 Columns, No Space</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Single</a></li>
+                        </ul>
+                      </div>
+                      <!-- List 2 -->
+                        <div class="sub_list flex flex-col gap-4 pl-6 border-l-[1px] border-zinc-600/30">
+                        <a href="#" class="text-zinc-100 text-lg px-3">Portfolio With Filter</a>
+                        <ul class=" w-72 lg:w-96 text-zinc-300">
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 1 Col With Filter</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 2 Cols With Filter</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 3 Cols With Filter</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Grid 4 Cols With Filter</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Modern 3 Cols With Filter</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Portfolio Modern 4 Cols With Filter</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li class="flex justify-center items-center">
+                <!-- Blog -->
+                <li class="relative">
                   <a
                     x-on:click="active = 'blog'"
                     x-bind:class="active === 'blog' ? 'active_link': '' "
                     href="#"
-                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color"
+                    class="pb-4 px-5 transition-all duration-200 border-b-2 border-transparent hover:border-default-color flex justify-center items-center"
                     >blog</a
                   >
+                  <!-- Sub menu -->
+                  <div class="submenu capitalize p-6 absolute top-full -right-[200%] lg:-right-[330%] bg-zinc-800 flex opacity-0 invisible transition-all duration-500">
+
+                    <!-- Lists -->
+                    <div class="lists_container flex">
+                      <!-- List 1 -->
+                        <div class="sub_list flex flex-col gap-4 pr-6">
+                        <a href="#" class="text-zinc-100 text-lg px-3">Blog Column</a>
+                        <ul class=" w-72 lg:w-96 text-zinc-300">
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 1 Column (Right Sidebar)</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 2 Columns (Right Sidebar)</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 3 Columns</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 4 Columns</a></li>
+
+                        </ul>
+                      </div>
+                      <!-- List 2 -->
+                        <div class="sub_list flex flex-col gap-4 pl-6 border-l-[1px] border-zinc-600/30">
+                        <a href="#" class="text-zinc-100 text-lg px-3">Blog Masonry</a>
+                        <ul class=" w-72 lg:w-96 text-zinc-300">
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 2 Columns – Masonry (Right Sidebar)</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 3 Columns – Masonry</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog 4 Columns – Masonry</a></li>
+                          <li><a href="#" class="flex w-full pb-[0.3rem]  pt-2 hover:text-zinc-100 hover:bg-cyan-500/20 px-3 rounded-sm">Blog Full</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -186,68 +367,68 @@
           </div>
         </div>
       </div>
-
-      <!-- Nav Small Screen -->
-      <div class="md:hidden bg-default-black backdrop-blur-3xl">
-        <div class="container">
-          <div class="flex justify-between items-center py-3 sm:py-5">
-            <div class="nav_logo">
-              <img class="w-28" src="./images/header/logo.png" alt="logo" />
+    </nav>
+    <!----------------------------------------->
+    <!----- Nav Small Screen ----->
+    <!----------------------------------------->
+    <nav
+      class="md:hidden bg-default-black backdrop-blur-3xl sticky top-0 md:bg-zinc-900/80 z-50 md:backdrop-blur-xl shadow-lg"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center py-3 sm:py-5">
+          <div class="nav_logo">
+            <img class="w-28" src="./images/header/logo.png" alt="logo" />
+          </div>
+          <div class="nav">
+            <!-- Nav btn -->
+            <div
+              @click="navOpen = !navOpen"
+              class="nav_btn min-w-12 bg-default-gray p-2 h-full leading-none flex flex-col gap-[0.4rem] cursor-pointer"
+            >
+              <span class="line w-8 h-[3px] bg-slate-200"></span>
+              <span class="line h-[3px] bg-slate-200"></span>
+              <span class="line h-[3px] bg-slate-200"></span>
             </div>
-            <div class="nav">
-              <!-- Nav btn -->
-              <div
-                @click="navOpen = !navOpen"
-                class="nav_btn min-w-12 bg-default-gray p-2 h-full leading-none flex flex-col gap-[0.4rem] cursor-pointer"
-              >
-                <span class="line w-8 h-[3px] bg-slate-200"></span>
-                <span class="line h-[3px] bg-slate-200"></span>
-                <span class="line h-[3px] bg-slate-200"></span>
-              </div>
-              <!-- Nav links -->
-              <ul
-                x-bind:class="navOpen ? 'left_0' : '' "
-                class="nav_small absolute w-screen max-w-[70%] sm:max-w-[40%] px-4 py-4 h-screen -left-full top-full flex flex-col gap-4 bg-default-gray capitalize text-lg transition-all duration-700 ease-in-out"
-              >
-                <li><a href="index.html">home</a></li>
-                <li>
-                  <a
-                    @click="navOpen = false"
-                    href="about.html"
-                    class="border-bottom flex justify-between items-center border-b border-stone-900/50"
-                    ><span>about us</span
-                    ><i class="fa-solid fa-arrow-right"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    @click="navOpen = false"
-                    href="#"
-                    class="border-bottom flex justify-between items-center"
-                    ><span>our fleet</span>
-                    <i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </li>
-                <li><a href="rate.html">service rate</a></li>
-                <li>
-                  <a
-                    @click="navOpen = false"
-                    href="#"
-                    class="border-bottom flex justify-between items-center"
-                    ><span>portfolio</span>
-                    <i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    @click="navOpen = false"
-                    href="#"
-                    class="border-bottom flex justify-between items-center"
-                    ><span>blog</span> <i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+            <!-- Nav links -->
+            <ul
+              x-bind:class="navOpen ? 'left_0' : '' "
+              class="nav_small absolute w-screen max-w-[70%] sm:max-w-[40%] px-4 py-4 h-screen -left-full top-full flex flex-col gap-4 bg-default-gray capitalize text-lg transition-all duration-700 ease-in-out"
+            >
+              <li><a href="index.html">home</a></li>
+              <li>
+                <a
+                  @click="navOpen = false"
+                  href="about.html"
+                  class="border-bottom flex justify-between items-center border-b border-stone-900/50"
+                  ><span>about us</span><i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  @click="navOpen = false"
+                  href="#"
+                  class="border-bottom flex justify-between items-center"
+                  ><span>our fleet</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li><a href="rate.html">service rate</a></li>
+              <li>
+                <a
+                  @click="navOpen = false"
+                  href="#"
+                  class="border-bottom flex justify-between items-center"
+                  ><span>portfolio</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  @click="navOpen = false"
+                  href="#"
+                  class="border-bottom flex justify-between items-center"
+                  ><span>blog</span> <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -256,13 +437,13 @@
     <!----- Main Section ----->
     <!----------------------------------------->
     <main class="z-20">
-      <div class="swiper main_slider md:-mt-[61px] max-h-[755px] text-slate-50">
+      <div class="swiper main_slider md:-mt-[61px] text-slate-50">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div
-            class="swiper-slide bg-one-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center flex justify-center items-center"
+            class="swiper-slide bg-one-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center flex justify-center items-center relative"
           >
-            <div class="content slide_1 text-center flex flex-col gap-6">
+            <div class="content slide_1 text-center flex flex-col gap-6 absolute top-1/2 transform -translate-y-1/2">
               <h2
                 class="first capitalize text-2xl xs:text-4xl sm:text-5xl md:text-6xl text-cyan-400 font-semibold font-merri"
               >
@@ -295,20 +476,21 @@
               </div>
             </div>
           </div>
+
           <!-- Slide 2 -->
 
           <div
-            class="swiper-slide bg-two-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center flex items-center md:items-end"
+            class="swiper-slide relative bg-two-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center"
           >
             <div
-              class="content slide_2 grid gap-1 md:gap-4 md:ml-24 md:mb-32 px-14 md:px-0"
+              class="content grid gap-2 slide_2 absolute top-[55%] left-[25%] transform -translate-x-[25%] -translate-y-[55%]"
             >
               <h1
                 class="first text-xl xs:text-3xl sm:text-4xl md:text-5xl font-bold"
               >
                 We Are #1 Limo Services
               </h1>
-              <p class="second text-slate-200 text-sm md:text-md">
+              <p class="second text-slate-200 text-sm xs:text-base">
                 Limos King offers superb limo service in New York and
                 Manhatatan. &nbsp;We are the most popular and has <br />been
                 chosen by many important people. We also provide premier service
@@ -318,7 +500,7 @@
               <div class="third btn capitalize font-merri mt-6">
                 <a
                   href="#"
-                  class="bg-default-color text-sm md:text-md py-2 px-3 sm:py-3 sm:px-5 rounded-md"
+                  class="bg-default-color text-sm xs:text-lg py-2 px-3 sm:py-3 sm:px-5 rounded-md"
                   >see our fleet</a
                 >
               </div>
@@ -328,10 +510,10 @@
           <!-- Slide 3 -->
 
           <div
-            class="swiper-slide bg-three-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center flex justify-center items-end pb-28 mb:items-end"
+            class="swiper-slide bg-three-bg min-h-[70vh] md:min-h-screen w-full bg-cover bg-center"
           >
             <div
-              class="content slide_3 flex flex-col gap-4 md:justify-end items-center text-3xl sm:text-5xl md:text-7xl capitalize font-semibold"
+              class="content slide_3 absolute top-[65%] left-1/2 transform -translate-x-1/2 -translate-y-[65%] flex flex-col gap-4 items-center text-4xl sm:text-5xl md:text-7xl capitalize font-semibold w-full"
             >
               <h1 class="first">give yourself</h1>
               <span
